@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body {
+  background-color: #23272f;
+  font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+  color: #fff;
+  margin: auto;
+  text-align: center;
+  font-size: 3.5rem;
+}
+
+.card_grid {
+
+  max-width: 80%;
+  max-height: 60%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: auto;
+
+}
+
+.card {
+  transition: 0.2s;
+  background-color: #000;
+  padding: 50px 30px;
+  margin: 10px;
+  border-radius: 10px;
+  animation: 2s turnCard ease-in;
+}
+
+.card:hover {
+  transform: scale(1.1);
+}
+
+img {
+  max-height: 125px;
+  max-width: 125px;
+  animation: 2s turnImg ease-in;
+  backface-visibility: hidden;
+}
+
+@keyframes turnCard {0%, 60% { transform: rotateY(0deg); } 100% {transform: rotateY(180deg)}}
+
+@keyframes turnImg {84% { opacity: 1; } 85% { opacity: 0; }}
