@@ -91,7 +91,7 @@ useEffect(() => {
 return (
 
   <div>
-    <button onClick={setNewGrid}>Reiniciar</button>
+    <button onClick={setNewGrid}>Jugar</button>
     <h1 onClick={setNewGrid} style={{ color: currentColor }}>{title}</h1>
     <h3>Movimientos: {counter}</h3>
     <div className="cardContainer">
